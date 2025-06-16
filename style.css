@@ -21,13 +21,15 @@ body {
 .cabecalho {
     background-color: #A7D7FF; /* cor laranja clara */
     color: #fde716;
-    padding: 20px;
-    height: 30px;
+    display: flex;
+    padding: 180px;
+    height: 120px;
     text-align: center;
 }
 
+
 .cabecalho h1 {
-    font-size: 2.5rem;
+   font-size: 24px;
 }
 
 nav ul {
@@ -98,13 +100,11 @@ footer {
 }
 
 .cabecalho {
-    position: relative;
-    padding-top: 50px;
-    padding-bottom: 0,01px;
+    height: 200px;
 }
 
 .cabecalho h1, .cabecalho h2 {
-    position: absolute;
+   
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -139,8 +139,19 @@ hr {
 }
 
 .cachorro{
-    width: 190px;
+position: absolute;
+    top: 10px; /* mais acima */
+    left: 10px; /* à esquerda */
+    width: 170px; /* tamanho visível sem dominar o cabeçalho */
+    height: auto;
+ 
+ 
     
+}
+
+h1{
+    text-align: center;
+    font-style: italic;
 }
 
 
