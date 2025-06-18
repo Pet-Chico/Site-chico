@@ -1,0 +1,255 @@
+/* styles.css */
+
+:root {
+  --cor-primaria: #1A45FF;
+  --cor-secundaria: #F1D957;
+  --cor-clara: #ffffff;
+  --cor-fundo: #A7D7FF;
+  --cor-texto: #333;
+  --cor-clara-contraste: #fff;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--cor-fundo);
+  color: var(--cor-texto);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 0; 
+  justify-content: center;
+}
+
+header {
+  background: var(--cor-primaria);
+  color: var(--cor-clara-contraste);
+  padding: 15px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  color: var(--cor-clara-contraste);
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://via.placeholder.com/1200x400/1A45FF/FFFFFF?text=Petlove+Servi%C3%A7os') center/cover no-repeat;
+  color: var(--cor-clara);
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--cor-secundaria);
+  color: #000;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+  
+}
+
+.btn:hover {
+  background: var(--cor-clara-contraste);
+}
+
+.planos .cards {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex: 1 1 480px;
+  max-width: 800px;
+  text-align: center;
+  margin: auto;
+ margin-top: 25px;
+}
+
+.card.destaque {
+  border: 2px solid var;
+  background: var(--cor-clara);
+}
+
+.card h3 {
+  margin-bottom: 13px;
+  color: var(--cor-primaria);
+}
+
+.etapas ol {
+  list-style-position: inside;
+  padding-left: 0;
+  line-height: 1.8;
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.faq .pergunta {
+  background: white;
+  border-left: 4px solid var(--cor-secundaria);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.faq h4 {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+}
+
+footer {
+  background: #f7f7f7;
+  color: #000000;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+/*CARD CELULAR*/
+
+.app-box {
+  background-color: #FFFE7C;
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 800px;
+  margin: 40px auto;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.app-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.app-image {
+  width: 120px;
+  height: auto;
+}
+
+.text-content h2 {
+  color: #1A45FF;
+  font-size: 28px;
+  margin: 0;
+}
+
+.text-content p {
+  color: #333;
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+.store-buttons {
+  margin-top: 16px;
+  display: flex;
+  gap: 16px;
+}
+
+.store-buttons img {
+  height: 40px;
+  transition: transform 0.2s;
+}
+
+.store-buttons img:hover {
+  transform: scale(1.05);
+}
+
+.plans {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  background-color:#A7D7FF; /* amarelo claro de fundo */
+}
+
+.plan {
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  color: white;
+  width: 220px;
+  text-align: center;
+  box-shadow: 0 4px 10px #A7D7FF;;
+  transition: transform 0.3s ease;
+}
+
+.plan:hover {
+  transform: translateY(-5px);
+}
+
+.plan h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.plan h3::after {
+  
+  display: block;
+  font-size: 1.2rem;
+  color: #fff;
+  margin-top: 0.3rem;
+}
+
+/* Aplicando sua paleta em degradês */
+.plan-basic {
+  background: linear-gradient(to right, #A7D7FF, #1A45FF); /* azul claro para azul escuro */
+}
+
+.plan-standard {
+  background: linear-gradient(to right, #ffffff, #921919); /* amarelo médio para claro */
+}
+
+.plan-premium {
+  background: linear-gradient(to right, #978831, #A7D7FF); /* azul escuro para amarelo médio */
+}
+
+.plans button {
+  margin-top: 1rem;
+  background: white;
+  color: #1A45FF;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.plans button:hover {
+  background: #A7D7FF;
+}
