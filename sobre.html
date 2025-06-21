@@ -1,32 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre - Mundo Pet</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pet-Chico</title>
+  <link rel="stylesheet" href="serviço.css" />
 </head>
 <body>
-    <header class="cabecalho">
-        <h1>Mundo Pet</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="servicos.html">Serviços</a></li>
-                <li><a href="produtos.html">Produtos</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <h2>Sobre Nós</h2>
-        <p>A Mundo Pet é especializada no cuidado e bem-estar dos animais.</p>
-    </main>
+  <!-- Cabeçalho -->
+  <header class="top-header">
+    <div class="header-container">
+      <img src="WhatsApp_Image_2025-06-11_at_10.38.52__1_-removebg-preview.png" alt="Logo da Pet-Chico" class="logo-cabecalho" />
 
-    <footer>
-        <p>&copy; 2025 Mundo Pet. Todos os direitos reservados.</p>
-    </footer>
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="#">Cachorros</a></li>
+          <li><a href="#">Gatos</a></li>
+          <li><a href="#">Pássaros</a></li>
+          <li><a href="#">Peixes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Seção Principal -->
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Cuidado completo para o seu pet</h2>
+        <p>Assine um plano de saúde e garanta mais tranquilidade e economia</p>
+        <a href="#planos" class="btn">Ver Planos</a>
+        <a href="https://wa.me/5599999999999" class="btn-whatsapp" target="_blank" rel="noopener">💬 Fale conosco no WhatsApp</a>
+      </div>
+    </section>
+
+    <!-- Planos de Assinatura -->
+    <section class="plans" id="planos">
+      <div class="plans-header">
+        <h2>Escolha um plano para seu pet</h2>
+        <p>Conheça nossos serviços e escolha o melhor para seu amigo.</p>
+      </div>
+
+      <div class="plans-banners">
+        <article class="plan-banner">
+          <img src="banho_pet.jpg" alt="Imagem de cachorro tomando banho" />
+          <h3>Banho - R$ 60,00</h3>
+        </article>
+        <section class="plan-details">
+          <ul>
+            <li>Banho com produtos hipoalergênicos</li>
+            <li>Secagem com ar morno</li>
+            <li>Escovação e perfume pet</li>
+          </ul>
+        </section>
+
+        <article class="plan-banner">
+          <img src="tosa_pet.jpg" alt="Cachorro sendo tosado" />
+          <h3>Tosa - R$ 19,00</h3>
+        </article>
+        <section class="plan-details">
+          <ul>
+            <li>Tosa higiênica ou completa</li>
+            <li>Especialistas em raças variadas</li>
+            <li>Serviço rápido e seguro</li>
+          </ul>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Pet-Chico. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- VLibras Plugin -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper">
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,83 +1,80 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cuidados, planos e serviços para seu pet com a Pet-Chico." />
   <title>Pet-Chico</title>
   <link rel="stylesheet" href="serviço.css" />
 </head>
 <body>
+
   <!-- Cabeçalho -->
   <header class="top-header">
     <div class="header-container">
       <img src="WhatsApp_Image_2025-06-11_at_10.38.52__1_-removebg-preview.png" alt="Logo da Pet-Chico" class="logo-cabecalho" />
+
       <div class="search-box">
         <input type="text" placeholder="Para seu pet, procure aqui" />
-        <button><span>🔍</span></button>
+        <button aria-label="Buscar"><span>🔍</span></button>
       </div>
-      <nav class="nav-bar">
-        <ul>
-          <li><a href="#">Cachorros</a></li>
-          <li><a href="#">Gatos</a></li>
-          <li><a href="#">Pássaros</a></li>
-          <li><a href="#">Peixes</a></li>
-        </ul>
-      </nav>
     </div>
+
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="#">Cachorros</a></li>
+        <li><a href="#">Gatos</a></li>
+        <li><a href="#">Pássaros</a></li>
+        <li><a href="#">Peixes</a></li>
+      </ul>
+    </nav>
   </header>
 
   <!-- Seção Principal -->
   <main>
+    <!-- Hero / Banner -->
     <section class="hero">
       <div class="container">
         <h2>Cuidado completo para o seu pet</h2>
         <p>Assine um plano de saúde e garanta mais tranquilidade e economia</p>
         <a href="#planos" class="btn">Ver Planos</a>
+        <a href="https://wa.me/5599999999999" class="btn-whatsapp" target="_blank" rel="noopener">💬 Fale conosco no WhatsApp</a>
       </div>
     </section>
 
     <!-- Planos de Assinatura -->
     <section class="plans" id="planos">
-      <h2>Escolha um plano para seu pet</h2>
+      <div class="plans-header">
+        <h2>Escolha um plano para seu pet</h2>
+      </div>
 
-      <!-- Banho -->
-      <article class="plan plan-basic">
-        <header><h3>Banho - R$ 60,00</h3></header>
-        <img src="banner_banho.jpg" alt="Imagem de cachorro tomando banho" class="plan-banner" />
-        <section>
-          <ul>
-            <li>Banho com produtos hipoalergênicos</li>
-            <li>Secagem com ar morno</li>
-            <li>Escovação e perfume pet</li>
-          </ul>
-        </section>
-      </article>
+      <div class="plans-wrapper">
+        <!-- Banho -->
+        <article class="plan plan-basic">
+          <header><h3>Banho - R$ 60,00</h3></header>
+          <img src="istockphoto-1277453154-612x612.jpg" alt="Imagem de cachorro tomando banho" class="plan-banner" />
+          <section>
+            <ul>
+              <li>🐾 Banho com produtos hipoalergênicos</li>
+              <li>🐾 Secagem com ar morno</li>
+              <li>🐾 Escovação e perfume pet</li>
+            </ul>
+          </section>
+        </article>
 
-      <!-- Tosa -->
-      <article class="plan plan-standard">
-        <header><h3>Tosa - R$ 19,00</h3></header>
-        <img src="banner_tosa.jpg" alt="Cachorro sendo tosado" class="plan-banner" />
-        <section>
-          <ul>
-            <li>Tosa higiênica ou completa</li>
-            <li>Especialistas em raças variadas</li>
-            <li>Serviço rápido e seguro</li>
-          </ul>
-        </section>
-      </article>
-
-      <!-- Premium -->
-      <article class="plan plan-premium">
-        <header><h3>Premium - R$ 29,00</h3></header>
-        <img src="banner_premium.jpg" alt="Serviço premium para pets" class="plan-banner" />
-        <section>
-          <ul>
-            <li>Check-up de saúde</li>
-            <li>Banho + Tosa + Hidratação</li>
-            <li>Atendimento personalizado</li>
-          </ul>
-        </section>
-      </article>
+        <!-- Tosa -->
+        <article class="plan plan-standard">
+          <header><h3>Tosa - R$ 19,00</h3></header>
+          <img src="istockphoto-969077342-612x612.jpg" alt="Cachorro sendo tosado" class="plan-banner" />
+          <section>
+            <ul>
+              <li>🐾 Tosa higiênica ou completa</li>
+              <li>🐾 Especialistas em raças variadas</li>
+              <li>🐾 Serviço rápido e seguro</li>
+            </ul>
+          </section>
+        </article>
+      </div>
     </section>
   </main>
 
@@ -87,5 +84,17 @@
       <p>&copy; 2025 Pet-Chico. Todos os direitos reservados.</p>
     </div>
   </footer>
+
+  <!-- VLibras - Plugin de Acessibilidade -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
 </body>
 </html>
