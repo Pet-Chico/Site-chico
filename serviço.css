@@ -38,7 +38,7 @@ body {
 }
 
 .logo-cabecalho {
-  height: 115px;
+  height: 140px;
   width: auto;
 }
 
@@ -234,17 +234,93 @@ body {
   padding-left: 4px;
 }
 
-/* Rodapé */
-footer {
-  background-color: #3a9ad9;
+/* Footer */
+.footer {
+  background: #1e3a8a;
   color: white;
-  padding: 20px 0;
-  text-align: center;
-  font-size: 0.9rem;
-  margin-top: 40px;
+  padding: 60px 0 20px;
 }
 
-/* Responsivo */
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.footer-logo-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.footer-logo h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.footer-logo p {
+  font-size: 0.875rem;
+  color: #93c5fd;
+}
+
+.footer-section h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  color: #93c5fd;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover,
+.footer-section ul li a:focus {
+  color: white;
+  outline: none;
+}
+
+.footer-contact p {
+  color: #93c5fd;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #1e40af;
+  padding-top: 20px;
+  text-align: center;
+  color: #93c5fd;
+}
+
+/* WhatsApp icon inside footer-contact */
+.whatsapp-icon.small {
+  width: 20px;
+  height: 20px;
+  fill: #25D366;
+}
+
+/* Responsividade para mobile */
 @media (max-width: 768px) {
   .header-container {
     flex-direction: column;
@@ -269,5 +345,10 @@ footer {
 
   .plan {
     max-width: 100%;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }
